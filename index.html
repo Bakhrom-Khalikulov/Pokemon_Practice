@@ -8,15 +8,76 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Pokemon</title>
 </head>
-<body>
+<body class="bg-secondary">
 
     <section class="pokemon">
         <div class="container">
-            <div class="pokemon-header">
-                
+
+            <div class="pokemon-header mt-3">
+                <img class="pokemon__logo" 
+                     src="./images/pokemon_logo.svg" 
+                     width="300"
+                     height="200"
+                     alt="pokemon logo" >
+            </div>
+
+            <div class="row">
+                <div class="col-12 my-5">
+                    <form 
+                        class="js-search-form d-flex me-2" 
+                        action="https://echo.htmlacademy.ru/courses"
+                        method="GET">
+                        <input 
+                            class="js-search-input form-control me-2" 
+                            type="search"
+                            name="search_movie"
+                            placeholder="Search">
+
+                        <button class="btn btn-primary" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="js-pokemons-list row">
+
+            </div>
+
+            <div class="col-3 mb-3">
+                <div class="pokemon-box p-4 h-100 d-flex flex-column justify-content-between text-bg-light rounded">
+                    <img class="js-pokemon__img mx-auto d-block img-fluid mb-3" 
+                         src="https://picsum.photos/300"
+                         alt="">
+                    
+                    <h3 class="js-pokemon__title mb-1">
+                        Lorem, ipsum dolor.
+                    </h3>
+
+                    <h5 class="js-pokemon__type mb-3">
+                        Lorem, ipsum dolor.
+                    </h5>
+
+                    <div class="d-flex align-items-center">
+                        <span class="js-pokemon__weight me-5">
+                            65 kg
+                        </span>
+
+                        <span class="js-pokemon__age">
+                            100 age
+                        </span>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
+
+    <template class="js-pokemon__template">
+
+
+    </template>
 
 
 

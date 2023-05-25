@@ -58,3 +58,23 @@ ul{
 a{
     text-decoration: none;
 }
+
+/* POKEMON STYLE STARTS */
+.video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+.pokemon-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* POKEMON STYLE ENDS */
